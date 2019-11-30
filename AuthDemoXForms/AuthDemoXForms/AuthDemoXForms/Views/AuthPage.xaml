@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:vm="clr-namespace:AuthDemoXForms.ViewModels"
+             x:Class="AuthDemoXForms.Views.AuthPage">
+
+
+    <ContentPage.BindingContext>
+        <vm:AuthViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Button Text="Google Auth"
+                    Command="{Binding GoogleAuthCommand}"
+                    BackgroundColor="DeepSkyBlue"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+            <Button Text="Facebook Auth"
+                    Command="{Binding FacebookAuthCommand}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Grid.Row="1"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
