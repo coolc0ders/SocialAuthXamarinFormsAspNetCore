@@ -45,7 +45,8 @@ namespace AuthDemoWeb.Controllers
         [HttpPost]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, false, false);
 
             if (result.Succeeded)
             {
