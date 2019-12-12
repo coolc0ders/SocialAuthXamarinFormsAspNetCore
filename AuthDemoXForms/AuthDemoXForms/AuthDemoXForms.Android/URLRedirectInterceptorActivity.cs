@@ -19,7 +19,7 @@ namespace AuthDemoXForms.Droid
        new[] { Intent.ActionView },
        Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
        DataSchemes = new[] { 
-           "com.googleusercontent.apps.294518765864-7s2aecvnrmracvrp2o0qv729bpuh0i2t" },
+           "com.googleusercontent.apps.29...-7aecvn..." },
        DataPath = "/oauth2redirect")]
     public class URLRedirectInterceptorActivity : Activity
     {
