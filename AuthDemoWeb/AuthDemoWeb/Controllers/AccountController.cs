@@ -101,7 +101,7 @@ namespace AuthDemoWeb.Controllers
             }
         }
         
-        [HttpPost]
+        [HttpPost] 
         public async Task<IActionResult> Facebook([FromBody] UserTokenIdModel token)
         {
             try

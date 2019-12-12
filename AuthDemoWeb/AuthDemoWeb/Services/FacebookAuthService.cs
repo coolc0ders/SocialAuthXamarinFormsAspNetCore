@@ -14,7 +14,7 @@ namespace AuthDemoWeb.Services
     {
         private readonly IConfiguration _configuration;
         private readonly UserManager<AppUser> _userManager;
-
+ 
         public FacebookAuthService(IConfiguration configuration, UserManager<AppUser> userManager)
         {
             _userManager = userManager;
