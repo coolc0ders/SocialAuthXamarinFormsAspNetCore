@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AspNetCore.Identity.Mongo" Version="6.1.1" />
     <PackageReference Include="Google.Apis.Auth" Version="1.42.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
       <PrivateAssets>all</PrivateAssets>
