@@ -52,7 +52,14 @@ namespace AuthDemoWeb.Services
                     UserName = userToken.FamilyName + "_" + userToken.GivenName
                 };
                 var identityUser = await _userManager.CreateAsync(appUser);
-                return appUser;
+                If(identityUser.Succeeded)
+                {
+                    return appUser;
+                }
+                else
+                {
+                    throw new Exception("An error ocurred creating the user" + JsonConvert.SerializeObject(identityUser.Errors));
+                }
             }
             return user;
         }
